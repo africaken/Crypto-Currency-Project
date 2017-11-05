@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mint_cream"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity_margin"
+        android:elevation="@dimen/elevation"
+        app:cardCornerRadius="@dimen/corner_radius"
+        tool:targetApi="lollipop">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/distance"
+                android:layout_marginBottom="@dimen/distance"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/distance"
+                android:paddingRight="@dimen/distance">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="start"
+                    android:text="@string/exchange_market"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/chocolate"
+                    tool:targetApi="jelly_bean" />
+
+                <TextView
+                    android:id="@+id/currencyExchange_Market"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="start"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/black"
+                    tool:targetApi="jelly_bean"
+                    tool:text="CCCAG" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/distance"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/distance"
+                android:paddingRight="@dimen/distance">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="start"
+                    android:text="@string/date"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/chocolate"
+                    tool:targetApi="jelly_bean" />
+
+                <TextView
+                    android:id="@+id/transaction_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="start"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/black"
+                    tool:targetApi="jelly_bean"
+                    tool:text="20th October, 2017" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/gap"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/distance"
+                android:paddingRight="@dimen/distance">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="start"
+                    android:text="@string/time"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/chocolate"
+                    tool:targetApi="jelly_bean" />
+
+                <TextView
+                    android:id="@+id/transaction_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="start"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/black"
+                    tool:targetApi="jelly_bean"
+                    tool:text="12:23 PM" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/distance"
+                android:layout_marginBottom="@dimen/distance"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/distance"
+                android:paddingRight="@dimen/distance">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="start"
+                    android:text="@string/etherium"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/colorTitle"
+                    tool:targetApi="jelly_bean" />
+
+                <TextView
+                    android:id="@+id/fromSymbol"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="start"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/colorTitle"
+                    android:textStyle="bold"
+                    tool:targetApi="jelly_bean"
+                    tool:text="ETH" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/distance"
+                android:paddingRight="@dimen/distance">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/exchanged_currency"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="start"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/dark_green"
+                        tool:targetApi="jelly_bean"
+                        tool:text="@string/bitcoin" />
+
+                    <TextView
+                        android:id="@+id/toSymbol"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="start"
+                        android:textAllCaps="false"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/dark_green"
+                        android:textStyle="bold"
+                        tool:targetApi="jelly_bean"
+                        tool:text="BTC" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="start"
+                        android:text="@string/exchange_rate"
+                        android:textAllCaps="false"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/colorText"
+                        tool:targetApi="jelly_bean"
+                        tool:text="@string/exchange_rate" />
+
+                    <TextView
+                        android:id="@+id/rateExchange"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="start"
+                        android:textAllCaps="false"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/colorText"
+                        android:textStyle="bold"
+                        tool:targetApi="jelly_bean"
+                        tool:text="0.0000" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
